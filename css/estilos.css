@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+@font-face {
+font-family: "NunitoBold";
+font-weight: normal;
+font-style: normal;
+src: url("../fonts/Nunito-Bold.ttf") format("truetype");
+}
+@font-face {
+font-family: "NunitoRegular";
+font-weight: normal;
+font-style: normal;
+src: url("../fonts/Nunito-Regular.ttf") format("truetype");
+}
+@font-face {
+font-family: "NunitoLight";
+font-weight: normal;
+font-style: normal;
+src: url("../fonts/Nunito-Light.ttf") format("truetype");
+}
+
+*,:after,:before{box-sizing:border-box}
+img {border:0em;max-width:100%;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul,li{list-style-type:none;margin:0;padding:0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;-webkit-text-size-adjust: none;}
+h1,h2,h3,h4,h5,h6,p{font-weight:normal;margin:0;}
+body {font-family:'NunitoRegular',Arial, Helvetica, sans-serif;margin:0 auto;padding:0;font-size:16px;position:relative;}
+.oculto{display:none}
+
+header{padding:0 10vw 16px;display:flex;justify-content:space-between;align-items:flex-end;height:80px;position:relative}
+header a.logo{background:url(../img/logo-mimo.png) no-repeat 0 0;background-size:163px 42px;width:163px;height:42px;}
+header nav{margin-right:180px;}
+header nav ul li{display:inline-block;margin:0 16px;}
+header nav ul li a{color:#000000;font-size:16px;font-family:'NunitoBold';transition:all .4s;padding-bottom:13px;}
+header nav ul li a:hover{color:#DC1515;border-bottom:3px solid #DC1515;}
+
+aside{position:absolute;right:10vw;top:0;width:148px;padding:20px 0 5px;z-index:20}
+aside li{display:inline-block;margin:0 5px;}
+aside li a.en{background:url(../img/UK.svg) no-repeat 0 0;width:36px;height:36px;background-size:36px 36px;text-indent:-9999px;display:block}
+aside li a.es{background:url(../img/Spain.svg) no-repeat 0 0;width:36px;height:36px;background-size:36px 36px;text-indent:-9999px;display:block}
+aside li a.ch{background:url(../img/China.svg) no-repeat 0 0;width:36px;height:36px;background-size:36px 36px;text-indent:-9999px;display:block}
+
+#home{position:relative}
+#home > img{position:absolute;top:0;left:50%;transform:translateX(-85px);width:100%;height:100%;max-width:170px;z-index:10}
+.fondo-1{background:url(../img/fondo-1.jpg) no-repeat center;width:100vw;max-width:100%;height:calc(100vh - 100px);background-size:cover;}
+.fondo-2{background:url(../img/fondo-2.jpg) no-repeat center;width:100vw;max-width:100%;height:calc(100vh - 100px);background-size:cover;}
+.fondo-3{background:url(../img/fondo-3.jpg) no-repeat right center;width:100vw;max-width:100%;height:calc(100vh - 100px);background-size:cover;}
+.fondo-4{background:url(../img/fondo-4.jpg) no-repeat center;width:100vw;max-width:100%;height:calc(100vh - 100px);background-size:cover;}
+
+
+h1{font-size:46px;font-family:'NunitoBold';text-align:center;margin:5vw auto 2vw;}
+h1 span{font-family:'NunitoLight';display:block;font-size:30px;line-height:40px;}
+h2{font-family:'NunitoLight';;font-size:18px;line-height:24px;text-align:center;margin:0 auto 5vw;width:40%;}
+
+.mod-1{background:url(../img/world-tecnology.jpg) no-repeat center right;background-size:cover;position:relative}
+.mod-1:after{content:'';width:20px;height:20px;background-color:#DC1515;border-radius:50%;display:block;position:absolute;top:-10px;left:50%;transform:translateX(-10px);}
+.mod-1 section{width:40%;padding:5vw 0 5vw 8vw}
+.mod-1 h3{font-family:'NunitoBold';font-size:30px;line-height:40px;margin-bottom:10px;color:#ffffff;}
+.mod-1 h4{font-size:18px;line-height:24px;margin-top:10px;color:#ffffff;}
+.mod-1 p{font-size:16px;margin-top:30px;color:#ffffff;}
+.red-point{width:20px;height:20px;background-color:#DC1515;border-radius:50%;display:block;}
+
+.mod-2{padding:4vw 20vw;display:flex;justify-content:space-between}
+.mod-2 section:first-of-type{width:35vw;padding:0 3vw 0 0;border-left:0;}
+.mod-2 section{width:65vw;padding:0 0 0 3vw;border-left:1px solid #707070;}
+.mod-2 section li{display:block;margin-bottom:20px;}
+.mod-2 section li a{display:block;height:60px;line-height:60px;border:1px solid #DC1515;border-radius:19px;background-color:#ffffff;color:#000000;font-size:16px;text-align:center;transition:all .4s;}
+.mod-2 section li a:hover,.mod-2 section li a.activo{background-color:#DC1515;color:#ffffff;}
+.mod-2 section p{font-size:16px;margin-top:30px;}
+.mod-2 section > a{display:inline-block;height:50px;line-height:1;border-radius:19px;background-color:#DC1515;color:#ffffff;font-size:14px;text-align:center;padding:20px 40px;margin-top:30px;}
+
+.mod-3{background-color:#000000;margin-top:100px;}
+.mod-3 ul{display:flex;justify-content:center;}
+.mod-3 li{margin:-60px 1vw 0;max-width:395px;}
+.mod-3 li a{background-color:rgba(0,0,0,0.6);font-size:16px;text-align:center;height:80px;line-height:1.4;transform:translateY(-80px);color:#ffffff;display:flex;align-items:center;justify-content:center;position:relative}
+.mod-3 p{font-size:16px;margin-top:30px;color:#ffffff;}
+.mod-3 section{transform:translateY(-80px);display:none;}
+.mod-3 a.activo + section{display:block;}
+.mod-3 a:not(.activo):after{content:'';width:20px;height:20px;background-color:#DC1515;border-radius:50%;display:block;position:absolute;bottom:-5px;left:50%;transform:translateX(-10px);}
+.mod-3 a.activo:after{content:'';border-bottom:5px solid #DC1515;position:absolute;bottom:0;width:100%;}
+.mod-3 img{display:block;cursor:pointer;}
+
+.mod-4{display:flex;justify-content:space-between;margin:4vw 0;flex-wrap:wrap}
+.mod-4 section{width:60vw;}
+.mod-4 section:first-of-type{width:40vw;padding:0 3vw 0 8vw;}
+.mod-4 section > p{font-size:20px;margin-bottom:30px;font-family:'NunitoBold'}
+.mod-4 section > ul li{display:block;margin-bottom:10px;font-size:16px;}
+.mod-4 section > div{background:url(../img/brujula.jpg) no-repeat right bottom;background-size:cover;padding:3vw;}
+.mod-4 section > div ul{display:flex;justify-content:flex-start;align-items:flex-end;}
+.mod-4 section > div li{margin-right:2vw;}
+.mod-4 section > div li:first-of-type{width:35%;border-right:1px solid #ffffff;}
+.mod-4 section > div p strong{font-size:24px;margin-bottom:40px;color:#ffffff;display:block;}
+.mod-4 section > div li > a{font-size:16px;margin:30px 0;color:#ffffff;display:block;padding-right:10px;width:51%;}
+.mod-4 section > div li > a.activo{border-bottom:2px solid #DC1515;}
+.mod-4 section > div li div p,.mod-4 section > div li div p a{font-size:16px;color:#ffffff;margin-bottom:20px;line-height:24px;}
+.mod-4 section > a{display:inline-block;height:50px;line-height:1;border-radius:19px;background-color:#DC1515;color:#ffffff;font-size:14px;text-align:center;padding:20px 40px;margin-top:30px;}
+
+footer{border-top:5px solid #DC1515;background-color:#000000;height:50px;}
+
+@media only screen and (max-width:1024px) {
+    .mod-4 section > ul li{font-size:14px;}
+    .mod-4 section > div li:first-of-type{width:42%}
+}
+    
+@media only screen and (max-width:768px) {
+    header nav{margin-right:0;}
+    aside{right:inherit;left:0px;top:100px;width:auto;padding:10px;}
+    aside li{display:block;margin:10px 0;}
+    h1{margin:5vw 5vw 2vw}
+    h2{width:70%;}
+    .mod-1 section{width: 70%;}
+    .mod-2{padding: 4vw 10vw;}
+    .mod-3 li{margin:-60px 5vw 0;}
+    .mod-4 section:first-of-type,.mod-4 section{width:100vw;margin-bottom:30px;}
+    .mod-4 section > a{margin:30px auto 0;display:block;width:30%}
+}
+@media only screen and (max-width:767px) {
+    header{padding:0 5vw;align-items:center}
+    header a.logo{background:url(../img/logo-mimo.png) no-repeat 0 0;background-size:116px 30px;width:116px;height:30px;}
+    header nav{margin-right:0;position:absolute;top:70px;background-color:#ffffff;right:-50vw;width:50vw;transition:.4s all;z-index:10;display:none}
+    header nav ul li{display:block;padding:10px;border-bottom:1px solid #000000;margin:0;} 
+    header nav ul li:last-of-type{border-bottom:0;}
+    header nav.open{right:0;display:block}
+    
+    .menu{width:35px;height:20px;margin:0;cursor:pointer;display:inline-block;position:absolute;right:5vw;top:25px;}
+    .menu span{background-color:#000;position:absolute;border-radius:2px;transition:.3s cubic-bezier(.8, .5, .2, 1.4);width:100%;height:4px;transition-duration: 500ms}
+    .menu span:nth-child(1){top:0px;left:0px;}
+    .menu span:nth-child(2){top:8px;left:0px;}
+    .menu span:nth-child(3){bottom:0px;left:0px;}
+    .click-menu{height:0;}
+    .click-menu span:nth-child(1){transform:rotate(45deg);top:8px;}
+    .click-menu span:nth-child(2){transform:scale(.1);}
+    .click-menu span:nth-child(3){transform:rotate(-45deg);top:8px;}
+    
+    #home > img{transform:translateX(-60px);max-width:120px;}
+    h1{font-size:30px;}
+    h1 span{font-size:24px;}
+    h2{font-size:14px;}
+    .mod-1 section{width:90%}
+    .mod-1 h3{font-size:20px;line-height:30px;}
+    .mod-1 p{font-size:14px;}
+    .mod-2{flex-wrap:wrap;padding:6vw 5vw;}
+    .mod-2 section:first-of-type,.mod-2 section{width:100vw;}
+    .mod-2 section li{width:49%;display:inline-block}
+    .mod-2 section li a{font-size:12px;}
+    .mod-2 section{border-left:0;padding:0;}
+    .mod-2 section p,.mod-3 p{font-size:14px;line-height:20px;}
+    .mod-3 ul,.mod-4 section > div ul{flex-wrap:wrap;}
+    .mod-4 section > div{padding:8vw;}
+    .mod-4 section > div li:first-of-type{border-right:0;border-top:0;width:100%}
+    .mod-4 section > div li{border-top:1px solid #ffffff;width:100%;}
+    .mod-4 section > div li > a{margin:15px 0;}
+    .mod-4 section > div li div{padding-top:20px;}
+    .mod-4 section > a{width:50%}
+}
