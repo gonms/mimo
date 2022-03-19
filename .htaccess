@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(servicios|aviso-legal|politica-privacidad|contacto|equipo)$ $1.html [L]
