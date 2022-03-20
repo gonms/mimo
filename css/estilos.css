@@ -77,8 +77,8 @@ main article > img{max-width:94px;animation:fadeImagen 1s forwards 1s;opacity:0;
 #contacto form ul li span{display:inline-block;vertical-align:middle;width:calc(100% - 30px)}
 #contacto form ul li span a{color:#000000;transition:.5s all;text-decoration:underline;}
 #contacto form ul li span a:hover{color:#DC1515;}
-#contacto form ul li p{display:none;font-size:20px;line-height:30px;margin-top;20px}
-footer{border-top:10px solid #DC1515;background-color:#000000;}
+#contacto form ul li p{display:none;font-size:20px;line-height:30px;margin-top:20px}
+footer{border-top:10px solid #DC1515;background-color:#000000;padding-bottom:30px;}
 footer img{display:block;margin:20px auto;max-width:212px;}
 footer ul{display:flex;justify-content:center;}
 footer ul li{margin:1vw;text-align:center;}
@@ -114,10 +114,10 @@ footer ul li a:hover{color:#DC1515;text-decoration:underline;}
     .click-menu span:nth-child(2){transform:scale(.1);}
     .click-menu span:nth-child(3){transform:rotate(-45deg);top:8px;}
         
-    main#home{background:url(../img/fondo-home-m.jpg) no-repeat center;background-size:cover;width:100%;}
-    main#servicios{background:url(../img/fondo-servicios-m.jpg) no-repeat center;background-size:cover;width:100%;}
-    main#equipo{background:url(../img/fondo-equipo-m.jpg) no-repeat center;background-size:cover;width:100%;}
-    main#contacto{background:url(../img/fondo-contacto-m.jpg) no-repeat top;background-size:cover;width:100%;}
+    main#home{background:url(../img/fondo-home-m.jpg) no-repeat center;background-size:cover;width:100%;height:100vh;}
+    main#servicios{background:url(../img/fondo-servicios-m.jpg) no-repeat center;background-size:cover;width:100%;height:100vh;}
+    main#equipo{background:url(../img/fondo-equipo-m.jpg) no-repeat center;background-size:cover;width:100%;height:100vh;}
+    main#contacto{background:url(../img/fondo-contacto-m.jpg) no-repeat top;background-size:cover;width:100%;height:100vh;}
     main article h1{font-size:24px;}
     main article > img{max-width:70px;}
     main article h2{font-size:16px;line-height:20px;}
