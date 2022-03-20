@@ -23,6 +23,11 @@ aside li a.en{background:url(../img/US.svg) no-repeat 0 0;width:36px;height:36px
 aside li a.es{background:url(../img/Spain.svg) no-repeat 0 0;width:36px;height:36px;background-size:36px 36px;text-indent:-9999px;display:block}
 aside li a.ch{background:url(../img/China.svg) no-repeat 0 0;width:36px;height:36px;background-size:36px 36px;text-indent:-9999px;display:block}
 
+main.contenido{position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    width:100%;
+top:80px}
 main#home{background:url(../img/fondo-home.jpg) no-repeat center right fixed;background-size:cover;width:100%;}
 main#servicios{background:url(../img/fondo-servicios.jpg) no-repeat center right fixed;background-size:cover;width:100%;}
 main#equipo{background:url(../img/fondo-equipo.jpg) no-repeat center center fixed;background-size:cover;width:100%;}
@@ -113,7 +118,7 @@ footer ul li a:hover{color:#DC1515;text-decoration:underline;}
     .click-menu span:nth-child(1){transform:rotate(45deg);top:8px;}
     .click-menu span:nth-child(2){transform:scale(.1);}
     .click-menu span:nth-child(3){transform:rotate(-45deg);top:8px;}
-    
+        
     main#home{background:url(../img/fondo-home-m.jpg) no-repeat center right fixed;background-size:cover;width:100%;}
     main#servicios{background:url(../img/fondo-servicios-m.jpg) no-repeat center right fixed;background-size:cover;width:100%;}
     main#equipo{background:url(../img/fondo-equipo-m.jpg) no-repeat center center fixed;background-size:cover;width:100%;}
