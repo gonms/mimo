@@ -23,10 +23,10 @@ aside li a.en{background:url(../img/US.svg) no-repeat 0 0;width:36px;height:36px
 aside li a.es{background:url(../img/Spain.svg) no-repeat 0 0;width:36px;height:36px;background-size:36px 36px;text-indent:-9999px;display:block}
 aside li a.ch{background:url(../img/China.svg) no-repeat 0 0;width:36px;height:36px;background-size:36px 36px;text-indent:-9999px;display:block}
 
-main#home{background:url(../img/fondo-home.jpg) no-repeat center right fixed;background-size:cover;width:100%;}
-main#servicios{background:url(../img/fondo-servicios.jpg) no-repeat center right fixed;background-size:cover;width:100%;}
-main#equipo{background:url(../img/fondo-equipo.jpg) no-repeat center center fixed;background-size:cover;width:100%;}
-main#contacto{background:url(../img/fondo-contacto.jpg) no-repeat top right fixed;background-size:cover;width:100%;}
+main#home{background:url(../img/fondo-home.jpg) no-repeat center right fixed;background-size:200vh;width:100%;}
+main#servicios{background:url(../img/fondo-servicios.jpg) no-repeat center right fixed;background-size:200vh;width:100%;}
+main#equipo{background:url(../img/fondo-equipo.jpg) no-repeat center center fixed;background-size:200vh;width:100%;}
+main#contacto{background:url(../img/fondo-contacto.jpg) no-repeat top right fixed;background-size:200vh;width:100%;}
 main article{display:flex;justify-content:center;align-items:center;flex-direction:column;}
 main article:first-of-type{height:calc(100vh - 80px);}
 main article h1{font-size:36px;font-family:Arial, Helvetica, sans-serif;text-align:center;padding:5vw 2vw;color:#ffffff;width:60%;animation:fade1 2s forwards 1s;opacity:0;transform:translateY(40px);letter-spacing:1px;}
@@ -114,23 +114,23 @@ footer ul li a:hover{color:#DC1515;text-decoration:underline;}
     .click-menu span:nth-child(2){transform:scale(.1);}
     .click-menu span:nth-child(3){transform:rotate(-45deg);top:8px;}
     
-    main article h1{font-size:20px;}
+    main article h1{font-size:24px;}
     main article > img{max-width:70px;}
-    main article h2{font-size:14px;line-height:20px;}
+    main article h2{font-size:16px;line-height:20px;}
     #home .sub{padding:5vh 0;margin-bottom:5vh;;}
     #home .sub ul li:first-of-type{width:100%;margin-right:0;height:200px;}
     #home .sub ul li:first-of-type:after{content:'';position:absolute;top:calc(100% - 10px);transform:none;height:20px;width:80%;background-color:#DC1515;left:0;right:0;margin:0 auto;}
     #home .sub ul li:last-of-type{width:100%;padding:4vw;}
-    #home .sub ul p{font-size:14px;line-height:20px;}
+    #home .sub ul p{font-size:16px;line-height:20px;}
     #servicios .sub ul li, #equipo .sub ul li{width:100%;font-size:16px;line-height:24px;}
     #equipo .sub ul li:nth-child(3){display:none;}
     #equipo .mapa ul{flex-direction:column-reverse;flex-wrap:wrap;align-items:flex-start;}
     #equipo .mapa ul li:first-of-type{width:95vw;font-size:16px;line-height:24px;}
     #equipo .mapa ul li:first-of-type img{max-width:80px;}
-    #equipo .mapa ul li img{mix-blend-mode:color-dodge;}
+    #equipo .mapa ul li:last-of-type img{mix-blend-mode:color-dodge;}
     #contacto .sub > ul{margin:4vh 4vw;}
     #contacto .sub > ul li{margin:0 1vw;}
-    #contacto .sub > ul li a{font-size:16px;}
+    #contacto .sub > ul li a{font-size:14px;}
     #contacto form{flex-direction:column-reverse;}
     #contacto form ul{width:100%}
     #contacto form img{width:100%;margin-left:0;margin-bottom:3vh;}
