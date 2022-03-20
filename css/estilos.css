@@ -126,8 +126,11 @@ footer ul li a:hover{color:#DC1515;text-decoration:underline;}
     #home .sub ul li:first-of-type:after{content:'';position:absolute;top:calc(100% - 10px);transform:none;height:20px;width:80%;background-color:#DC1515;left:0;right:0;margin:0 auto;}
     #home .sub ul li:last-of-type{width:100%;padding:4vw;}
     #home .sub ul p{font-size:16px;line-height:20px;}
+    #servicios .sub{margin-bottom:5vh;}
     #servicios .sub ul li, #equipo .sub ul li{width:100%;font-size:16px;line-height:24px;}
+    #equipo .sub{margin-bottom:0;}
     #equipo .sub ul li:nth-child(3){display:none;}
+    #equipo .mapa{background-color:rgba(0,0,0,0.5);}
     #equipo .mapa ul{flex-direction:column-reverse;flex-wrap:wrap;align-items:flex-start;}
     #equipo .mapa ul li:first-of-type{width:95vw;font-size:16px;line-height:24px;}
     #equipo .mapa ul li:first-of-type img{max-width:80px;}
