@@ -14,7 +14,7 @@ header{padding:0 10vw 16px;display:flex;justify-content:space-between;align-item
 header a.logo{background:url(../img/logo-mimo.png) no-repeat 0 0;background-size:163px 42px;width:163px;height:42px;}
 header nav{margin-right:180px;}
 header nav ul li{display:inline-block;margin:0 16px;}
-header nav ul li a{color:#000000;font-size:16px;font-family:Arial, Helvetica, sans-serif;transition:all .4s;padding-bottom:13px;}
+header nav ul li a{color:#000000;font-size:14px;font-family:Arial, Helvetica, sans-serif;font-weight:bold;transition:all .4s;padding-bottom:13px;}
 header nav ul li a:hover,header nav ul li a.activo{color:#DC1515;border-bottom:3px solid #DC1515;}
 
 aside{position:absolute;right:10vw;top:0;width:148px;padding:20px 0 5px;z-index:20}
@@ -77,12 +77,12 @@ main article > img{max-width:94px;animation:fadeImagen 1s forwards 1s;opacity:0;
 #contacto form ul li span{display:inline-block;vertical-align:middle;width:calc(100% - 30px)}
 #contacto form ul li span a{color:#000000;transition:.5s all;text-decoration:underline;}
 #contacto form ul li span a:hover{color:#DC1515;}
-#contacto form ul li p{display:none;font-size:20px;line-height:30px;}
+#contacto form ul li p{display:none;font-size:20px;line-height:30px;margin-top;20px}
 footer{border-top:10px solid #DC1515;background-color:#000000;}
 footer img{display:block;margin:20px auto;max-width:212px;}
 footer ul{display:flex;justify-content:center;}
 footer ul li{margin:1vw;text-align:center;}
-footer ul li a{color:#ffffff;font-size:18px;transition:.5s all;text-decoration:none;}
+footer ul li a{color:#ffffff;font-size:16px;transition:.5s all;text-decoration:none;}
 footer ul li a:hover{color:#DC1515;text-decoration:underline;}
 .legal{padding:4vw;}
 .legal p{font-size:14px;line-height:24px;margin-bottom:16px;}
@@ -99,8 +99,9 @@ footer ul li a:hover{color:#DC1515;text-decoration:underline;}
     header{padding:0 5vw;align-items:center}
     header a.logo{background:url(../img/logo-mimo.png) no-repeat 0 0;background-size:116px 30px;width:116px;height:30px;}
     header nav{margin-right:0;position:absolute;top:70px;background-color:#ffffff;right:-50vw;width:50vw;transition:.4s all;z-index:10;display:none}
-    header nav ul li{display:block;padding:10px;border-bottom:1px solid #000000;margin:0;} 
+    header nav ul li{display:block;padding:10px;margin:0;} 
     header nav ul li:last-of-type{border-bottom:0;}
+    header nav ul li a{padding-bottom:0;}
     header nav.open{right:0;display:block}
     
     .menu{width:35px;height:20px;margin:0;cursor:pointer;display:inline-block;position:absolute;right:5vw;top:25px;}
@@ -133,6 +134,7 @@ footer ul li a:hover{color:#DC1515;text-decoration:underline;}
     #contacto form{flex-direction:column-reverse;}
     #contacto form ul{width:100%}
     #contacto form img{width:100%;margin-left:0;margin-bottom:3vh;}
+    #contacto form ul li p{font-size:16px;line-height:24px;}
 
     footer img{max-width:150px;}
     footer ul li a{font-size:14px;}
