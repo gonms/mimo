@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(services|privacy-policy|terms-services|contact|team)$ $1.html [L]

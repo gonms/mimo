@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>MIMO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/estilos.css" type="text/css">
+    <link rel="stylesheet" href="../css/estilos.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
@@ -19,10 +19,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="./">VISIÓN GLOBAL</a></li>
-                <li><a href="./servicios">SERVICIOS</a></li>
-                <li><a href="./equipo">EQUIPO</a></li>
-                <li><a href="./contacto" class="activo">CONTACTO</a></li>
+                <li><a href="./">MIMO全球</a></li>
+                <li><a href="./services">核心服务</a></li>
+                <li><a href="./team">MIMO 团队</a></li>
+                <li><a href="./contact" class="activo">联系我们</a></li>
             </ul>
         </nav>
     </header>
@@ -34,65 +34,65 @@
             <li><a href="/ch" class="ch">CH</a></li>
         </ul>
     </aside>
-
+    
     <main id="contacto">
         <article>
-            <h1><strong>"Las oportunidades se multiplican a medida que se aprovechan."</strong></h1>
-            <img src="img/mimo-home.svg" />
+            <h1><strong>"机遇总在未来，无论是抓住机遇还是创造机遇 都需要有远见."</strong></h1>
+            <img src="/img/mimo-home.svg" />
         </article>
 
         <article class="sub">
-            <h3>Para ponerte en contacto con nosotros, utiliza este formulario. Intentaremos responderte lo antes posible.</h3>
+            <h3>如果您想咨询任何问题，请留下信息，我们将尽快答复</h3>
             <ul>
-                <li><a href="#"><strong>ESPAÑA</strong></a></li>
-                <li><a href="#"><strong>CHINA</strong></a></li>
-                <li><a href="#"><strong>FRANCIA</strong></a></li>
-                <li><a href="#"><strong>MÉXICO</strong></a></li>
-                <li><a href="#"><strong>PANAMÁ</strong></a></li>
+                <li><a href="#"><strong>西班牙</strong></a></li>
+                <li><a href="#"><strong>中国</strong></a></li>
+                <li><a href="#"><strong>法国</strong></a></li>
+                <li><a href="#"><strong>墨西哥</strong></a></li>
+                <li><a href="#"><strong>巴拿马</strong></a></li>
             </ul>
             <form action="#" method="POST">
                 <ul>
                     <li>
-                        <label for="nombre">Nombre</label>
+                        <label for="nombre">姓名</label>
                         <input class="caja" type="text" name="nombre" id="nombre" required />
                     </li>
                     <li>
-                        <label for="empresa">Empresa</label>
+                        <label for="empresa">公司</label>
                         <input class="caja" type="text" name="empresa" id="empresa" required />
                     </li>
                     <li>
-                        <label for="email">Email</label>
+                        <label for="email">您的电子邮件</label>
                         <input class="caja" type="email" name="email" id="email" required />
                     </li>
                     <li>
-                        <label for="mensaje">Mensaje</label>
+                        <label for="mensaje">您的信息</label>
                         <textarea name="mensaje" id="mensaje" required></textarea>
                     </li>
                     <li>
-                        <input type="checkbox" name="acepto" id="acepto" required /> <span>Acepto los <a href="aviso-legal.html">términos de uso</a> y la <a href="politica-privacidad.html">política de privacidad</a>.</span>
+                        <input type="checkbox" name="acepto" id="acepto" required /> <span>我接受并同意所附使用条款和隐私政策。</span>
                     </li>
                     <li>
-                        <input type="submit" value="Enviar" />
-                        <p>Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo lo antes posible.<br /><strong>Muchas gracias por tu interés en nuestros servicios.</strong></p>
+                        <input type="submit" value="发送" />
+                        <p>消息已成功发送，我们会尽快与您联系。 非常感谢您的信任！</strong></p>
                     </li>
                 </ul>
-                <img src="img/contacto.jpg" />
+                <img src="/img/contacto.jpg" />
             </form>
         </article>
         <footer>
-            <img src="img/logo-mimo-blanco.png" />
+            <img src="/img/logo-mimo-blanco.png" />
             <ul>
-                <li><a href="./vision-global">VISIÓN GLOBAL</a></li>
-                <li><a href="./servicios">SERVICIOS</a></li>
-                <li><a href="./equipo">EQUIPO</a></li>
-                <li><a href="./contacto">CONTACTO</a></li>
+                <li><a href="./">MIMO全球</a></li>
+                <li><a href="./services">核心服务</a></li>
+                <li><a href="./team">MIMO 团队</a></li>
+                <li><a href="./contact">联系我们</a></li>
             </ul>
             <ul>
-                <li><a href="#">ESPAÑA</a></li>
-                <li><a href="#">CHINA</a></li>
-                <li><a href="#">FRANCIA</a></li>
-                <li><a href="#">MÉXICO</a></li>
-                <li><a href="#">PANAMÁ</a></li>
+                <li><a href="#">西班牙</a></li>
+                <li><a href="#">中国</a></li>
+                <li><a href="#">法国</a></li>
+                <li><a href="#">墨西哥</a></li>
+                <li><a href="#">巴拿马</a></li>
             </ul>
         </footer>
     </main>
@@ -106,8 +106,7 @@
             }); 
 
             $('form').on('submit', function() {
-                console.log("123");
-                $.post("backend.php", {
+                $.post("/backend.php", {
                     'nombre': $('#nombre').val(),
                     'empresa': $('#empresa').val(),
                     'email': $('#email').val(),
