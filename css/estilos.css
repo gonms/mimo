@@ -59,8 +59,9 @@ main article > img{max-width:94px;animation:fadeImagen 1s forwards 1s;opacity:0;
 #equipo .sub ul li:nth-child(3){padding:0;}
 #equipo .sub ul li img{height:100%;width:100%}
 #equipo .mapa ul{display:flex;align-items:flex-end;}
-#equipo .mapa ul li:first-of-type{display:flex;width:25vw;color:#ffffff;font-size:20px;line-height:30px;margin:0 0 10vh 5vw;}
+#equipo .mapa ul li:first-of-type{display:flex;width:20vw;color:#ffffff;font-size:20px;line-height:30px;margin:0 0 10vh 5vw;}
 #equipo .mapa ul li:first-of-type img{max-width:128px;margin-right:20px;}
+#equipo .mapa ul li:last-of-type{width:75vw}
 #contacto .sub{background-color:#ffffff;padding:10vh 0;}
 #contacto .sub h3{text-align:center;line-height:24px;font-size:18px;margin:0 4vw;}
 #contacto .sub > ul{margin:4vh 0}
@@ -88,12 +89,17 @@ footer ul li a:hover{color:#DC1515;text-decoration:underline;}
 .legal p{font-size:14px;line-height:24px;margin-bottom:16px;}
 .legal p.titulo,.legal p span{color:#DC1515;font-size:16px;}
     
+@media only screen and (max-width:1024px) {
+    #equipo .mapa ul li:first-of-type{width:25vw;}
+    #equipo .mapa ul li:last-of-type{width:70vw;}
+}
 @media only screen and (max-width:768px) {
     header nav{margin-right:0;}
     aside{right:inherit;left:0px;top:100px;width:auto;padding:10px;}
     aside li{display:block;margin:10px 0;}
     main article h1,main article h2,#contacto form{width:90%}
-    #equipo .mapa ul li:first-of-type{width:0;margin:0 0 5vh 5vw;}
+    #equipo .mapa ul li:first-of-type{;margin:0 0 5vh 5vw;}
+    #equipo .mapa ul li:first-of-type img{max-width:80px;}
 }
 @media only screen and (max-width:767px) {
     header{padding:0 5vw;align-items:center}
@@ -133,7 +139,7 @@ footer ul li a:hover{color:#DC1515;text-decoration:underline;}
     #equipo .mapa{background-color:rgba(0,0,0,0.5);}
     #equipo .mapa ul{flex-direction:column-reverse;flex-wrap:wrap;align-items:flex-start;}
     #equipo .mapa ul li:first-of-type{width:95vw;font-size:16px;line-height:24px;}
-    #equipo .mapa ul li:first-of-type img{max-width:80px;}
+    #equipo .mapa ul li:last-of-type{width:95vw;margin:0 auto;}
     #equipo .mapa ul li:last-of-type img{mix-blend-mode:color-dodge;}
     #contacto .sub > ul{margin:4vh 4vw;}
     #contacto .sub > ul li{margin:0 1vw;}
